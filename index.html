@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a261c">
+  <meta name="description" content="Anumara: joyería con alma en Plata Ley 925, gemas y piedras naturales. Descubre piezas creadas para resonar contigo.">
+  <meta property="og:title" content="Anumara · Joyería con alma">
+  <meta property="og:description" content="Talismanes vivos creados con Plata Ley 925, gemas y piedras naturales.">
+  <meta property="og:image" content="assets/brand.webp">
+  <title>Anumara · Joyería con alma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="products.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#coleccion">Ir a la colección</a>
+
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Anumara, inicio">
+      <img src="assets/logo.png" alt="Anumara, joyería con alma">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#historia">Nuestra esencia</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="header-whatsapp" href="https://wa.me/527771899045?text=Hola%20Anumara%2C%20quiero%20conocer%20sus%20piezas." target="_blank" rel="noopener">
+      WhatsApp
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Plata Ley 925 · Gemas naturales</p>
+        <h1 id="hero-title">Joyería<br><em>con alma</em></h1>
+        <p class="hero-copy">Talismanes vivos que guardan intenciones, historias y fragmentos de eternidad.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#coleccion">Descubrir la colección</a>
+          <a class="text-link" href="#historia">Conocer Anumara <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <picture>
+          <img id="hero-product" src="" alt="Pieza destacada de Anumara">
+        </picture>
+        <span class="hero-note">Piezas únicas · Hechas con intención</span>
+      </div>
+    </section>
+
+    <section class="manifesto" id="historia" aria-labelledby="manifesto-title">
+      <div class="manifesto-mark reveal" aria-hidden="true">A</div>
+      <div class="manifesto-content reveal">
+        <p class="eyebrow">Nuestra esencia</p>
+        <h2 id="manifesto-title">De la danza entre el alma y la materia nace <em>Anumara</em>.</h2>
+        <div class="manifesto-columns">
+          <p>Existe una fuerza invisible que da vida a todo lo que tocamos: el <strong>Ánima</strong>, la esencia pura, el aliento primero y eterno del alma. Y existe un hilo sagrado que abraza el tiempo: el <strong>Mālā</strong>, la guirnalda ancestral que guarda intenciones y recuerdos.</p>
+          <p>Unimos la sabiduría vibracional de las piedras con la luz de la Plata Ley 925 para forjar un puente entre la naturaleza y tu ser. No creamos simples joyas; forjamos talismanes que resuenan contigo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="collections" aria-labelledby="collections-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Un universo para cada intención</p>
+        <h2 id="collections-title">Explora nuestras colecciones</h2>
+      </div>
+      <div class="collection-links reveal">
+        <button data-jump-category="collares">
+          <span>01</span><strong>Collares</strong><small>Gemas que acompañan tu historia</small><i aria-hidden="true">↗</i>
+        </button>
+        <button data-jump-category="mil-vueltas">
+          <span>02</span><strong>Mil Vueltas</strong><small>La versatilidad de la Línea Iguazú</small><i aria-hidden="true">↗</i>
+        </button>
+        <button data-jump-category="pulseras">
+          <span>03</span><strong>Pulseras</strong><small>Intención en cada eslabón</small><i aria-hidden="true">↗</i>
+        </button>
+        <button data-jump-category="anillos">
+          <span>04</span><strong>Anillos</strong><small>Un latido que llevas contigo</small><i aria-hidden="true">↗</i>
+        </button>
+      </div>
+    </section>
+
+    <section class="shop" id="coleccion" aria-labelledby="shop-title">
+      <div class="shop-header">
+        <div class="reveal">
+          <p class="eyebrow">Catálogo Anumara</p>
+          <h2 id="shop-title">Encuentra la pieza que <em>resuena contigo</em></h2>
+        </div>
+        <p class="shop-count" aria-live="polite"><span id="result-count">0</span> piezas</p>
+      </div>
+
+      <div class="shop-tools">
+        <div class="filters" role="group" aria-label="Filtrar por colección">
+          <button class="active" data-category="all">Todas</button>
+          <button data-category="collares">Collares</button>
+          <button data-category="mil-vueltas">Mil Vueltas</button>
+          <button data-category="pulseras">Pulseras</button>
+          <button data-category="anillos">Anillos</button>
+        </div>
+        <label class="search">
+          <span class="sr-only">Buscar joyas</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          <input id="search-input" type="search" placeholder="Buscar piedra, pieza o colección…">
+        </label>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <p>No encontramos piezas con esa búsqueda.</p>
+        <button type="button" id="clear-search">Ver toda la colección</button>
+      </div>
+      <button class="load-more button button-outline" id="load-more" type="button">Ver más piezas</button>
+    </section>
+
+    <section class="promise">
+      <div class="promise-image reveal">
+        <img src="assets/brand.webp" alt="Identidad de Anumara, joyería con alma" loading="lazy">
+      </div>
+      <div class="promise-copy reveal">
+        <p class="eyebrow">El ritual Anumara</p>
+        <h2>Una joya.<br>Una intención.<br><em>Tu historia.</em></h2>
+        <ul>
+          <li><span>✦</span><div><strong>Materiales nobles</strong><small>Plata Ley 925, gemas y piedras seleccionadas.</small></div></li>
+          <li><span>✦</span><div><strong>Piezas con significado</strong><small>Cada diseño guarda una energía y una historia.</small></div></li>
+          <li><span>✦</span><div><strong>Atención personal</strong><small>Te acompañamos a elegir por WhatsApp.</small></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <img src="assets/logo.png" alt="" aria-hidden="true" class="contact-logo">
+      <p class="eyebrow">¿Encontraste tu pieza?</p>
+      <h2>Hagamos que llegue a <em>ti</em>.</h2>
+      <p>Escríbenos para confirmar disponibilidad, resolver tus dudas y coordinar tu pedido.</p>
+      <a class="button button-gold" href="https://wa.me/527771899045?text=Hola%20Anumara%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener">
+        Conversar por WhatsApp
+      </a>
+      <a class="phone-link" href="tel:+527771899045">(+52) 777 189 90 45</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="#inicio">ANUMARA <small>Joyería con alma</small></a>
+    <p>Plata Ley 925 · Gemas y piedras naturales</p>
+    <p>© <span id="year"></span> Anumara</p>
+  </footer>
+
+  <dialog class="product-modal" id="product-modal" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+    <div class="modal-gallery">
+      <div class="modal-main-image">
+        <button class="gallery-nav prev" type="button" aria-label="Foto anterior">←</button>
+        <img id="modal-image" src="" alt="">
+        <button class="gallery-nav next" type="button" aria-label="Foto siguiente">→</button>
+      </div>
+      <div class="modal-thumbnails" id="modal-thumbnails"></div>
+    </div>
+    <div class="modal-info">
+      <p class="eyebrow" id="modal-category"></p>
+      <h2 id="modal-title"></h2>
+      <div class="modal-materials" id="modal-materials"></div>
+      <p class="modal-description">Pieza artesanal creada para acompañar tu historia. Consulta disponibilidad y precio directamente con Anumara.</p>
+      <a class="button button-gold" id="modal-whatsapp" href="" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      <small>Al escribirnos, envías el nombre y código de esta pieza.</small>
+    </div>
+  </dialog>
+
+  <a class="floating-whatsapp" href="https://wa.me/527771899045?text=Hola%20Anumara%2C%20quiero%20conocer%20sus%20piezas." target="_blank" rel="noopener" aria-label="Contactar a Anumara por WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 32 32"><path d="M16 3a12.6 12.6 0 0 0-10.8 19l-1.7 6.4 6.5-1.7A12.7 12.7 0 1 0 16 3Zm7.4 17.8c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.2-4.7-1.2-3.9-1.7-6.4-5.7-6.6-6-.2-.3-1.6-2.2-1.6-4.2s1-3 1.4-3.4c.4-.4.8-.5 1.1-.5h.8c.3 0 .6-.1.9.7l1.2 3c.1.2.1.5 0 .7l-.5.8c-.2.3-.4.5-.6.7-.2.2-.4.5-.2.9.2.4 1.1 1.8 2.3 2.9 1.6 1.4 2.9 1.8 3.3 2 .4.2.7.2.9-.1l1.2-1.4c.3-.4.6-.3 1-.2l2.7 1.3c.4.2.7.3.8.5.1.2.1 1-.2 1.8Z"></path></svg>
+  </a>
+</body>
+</html>
