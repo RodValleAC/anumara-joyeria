@@ -143,7 +143,7 @@ def launch_post(items):
     ornament(draw, 540, 620, 190)
     draw_tracked(draw, 540, 648, "YA PUEDES COMPRAR EN LÍNEA", font("display", 36, 600), CREAM, 5)
     subtitle = font("serif", 40, italic=True)
-    draw.text((540, 718), "174 piezas únicas en Plata Ley 925", font=subtitle, fill=GOLD, anchor="ma")
+    draw.text((540, 718), "181 piezas únicas en Plata Ley 925", font=subtitle, fill=GOLD, anchor="ma")
     draw.text((540, 772), "Gemas y piedras naturales", font=subtitle, fill=(150, 165, 148), anchor="ma")
     footer(draw, image, 912)
     image.save(OUTPUT / "01-publicacion-lanzamiento.jpg", quality=92)
@@ -221,7 +221,7 @@ def story(items, filename, product_id, headline, subline, image_index=0):
 
 def share_image(items):
     image, draw = canvas((1200, 630))
-    product = pick(items, "collares-corazon-radiante-2")
+    product = pick(items, "collares-corazon-radiante-3")
     photo = cover(REPO / product["images"][1], (470, 560))
     image.paste(photo, (688, 35))
     draw.rectangle([684, 31, 1162, 598], outline=GOLD, width=2)
@@ -253,7 +253,7 @@ WhatsApp: {PHONE_TEXT}
 ---------------------------------------
 ✨ Ya puedes conocer toda la colección de Anumara en línea ✨
 
-Joyería con alma: 174 piezas únicas creadas con Plata Ley 925, gemas y piedras naturales.
+Joyería con alma: 181 piezas únicas creadas con Plata Ley 925, gemas y piedras naturales.
 Collares, Mil Vueltas, pulseras y anillos; cada uno pensado como un talismán vivo que
 acompaña tu historia.
 
@@ -268,7 +268,7 @@ Explora la colección completa aquí 👉 {url}
 ---------------------------------------
 Cada joya es un eslabón. Cada piedra es un latido. ✨
 
-Nuestra colección completa ya está en línea: 174 piezas en Plata Ley 925 con gemas y
+Nuestra colección completa ya está en línea: 181 piezas en Plata Ley 925 con gemas y
 piedras naturales, elegidas una a una por su energía.
 
 🔗 Link en la biografía
@@ -332,22 +332,22 @@ def build():
     launch_post(items)
     category_post(items, "02-publicacion-collares.jpg", "Collares",
                   "Guirnaldas que guardan intenciones",
-                  ["collares-corazon-radiante-2", "collares-corazon-en-flor-4",
-                   "collares-de-la-vida-doble-15", "collares-playa-marina-12"])
+                  ["collares-corazon-radiante-3", "collares-corazon-en-flor-5",
+                   "collares-de-la-vida-doble-16", "collares-playa-marina-13"])
     category_post(items, "03-publicacion-mil-vueltas.jpg", "Mil Vueltas", "Línea Iguazú",
                   [item["id"] for item in items if item["category"] == "mil-vueltas"][:4])
     category_post(items, "04-publicacion-pulseras.jpg", "Pulseras", "Una intención en cada eslabón",
                   [item["id"] for item in items if item["category"] == "pulseras"][:4])
     category_post(items, "05-publicacion-anillos.jpg", "Anillos", "Un latido que llevas contigo",
                   [item["id"] for item in items if item["category"] == "anillos"][:4])
-    piece_post(items, "06-pieza-corazon-radiante.jpg", "collares-corazon-radiante-2")
-    piece_post(items, "07-pieza-corazon-en-flor.jpg", "collares-corazon-en-flor-4")
+    piece_post(items, "06-pieza-corazon-radiante.jpg", "collares-corazon-radiante-3")
+    piece_post(items, "07-pieza-corazon-en-flor.jpg", "collares-corazon-en-flor-5")
     piece_post(items, "08-pieza-catrina.jpg", "collares-linea-dia-de-muertos-catrina-1")
-    story(items, "historia-01-lanzamiento.jpg", "collares-corazon-radiante-2",
-          "Tienda en línea", "174 piezas únicas te esperan", 1)
-    story(items, "historia-02-coleccion.jpg", "collares-corazon-en-flor-4",
+    story(items, "historia-01-lanzamiento.jpg", "collares-corazon-radiante-3",
+          "Tienda en línea", "181 piezas únicas te esperan", 1)
+    story(items, "historia-02-coleccion.jpg", "collares-corazon-en-flor-5",
           "Joyería con alma", "Plata Ley 925 y piedras naturales", 1)
-    story(items, "historia-03-whatsapp.jpg", "collares-volando-3",
+    story(items, "historia-03-whatsapp.jpg", "collares-volando-4",
           "Pide la tuya hoy", "Te atendemos por WhatsApp", 1)
     share_image(items)
     captions()
