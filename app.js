@@ -88,7 +88,7 @@ function showModal(product) {
   elements.modalWhatsapp.href = product.whatsapp;
   const receiptUrl = new URL(product.whatsapp);
   receiptUrl.searchParams.set("text",
-    `Hola Anumara, quiero enviar mi comprobante de Mercado Pago para la pieza ${product.title} (código ${product.id}) y coordinar el envío. Adjunto la captura o comprobante a continuación.`);
+    `Hola Anumara, quiero enviar mi comprobante de pago (transferencia bancaria o Mercado Pago) para la pieza ${product.title} (código ${product.id}) y coordinar el envío. Adjunto la captura o comprobante a continuación.`);
   elements.modalReceipt.href = receiptUrl.href;
   elements.modalThumbs.innerHTML = product.images.map((image, index) => `
     <button type="button" data-image-index="${index}" aria-label="Ver foto ${index + 1}" class="${index === 0 ? "active" : ""}">
