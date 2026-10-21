@@ -17,6 +17,7 @@ const elements = {
   modalMaterials: document.querySelector("#modal-materials"),
   modalThumbs: document.querySelector("#modal-thumbnails"),
   modalWhatsapp: document.querySelector("#modal-whatsapp"),
+  modalReceipt: document.querySelector("#modal-receipt"),
 };
 
 const normalize = value => value
@@ -85,6 +86,10 @@ function showModal(product) {
     ? product.materials.map(material => `<span>${material}</span>`).join("")
     : "<span>Pieza artesanal Anumara</span>";
   elements.modalWhatsapp.href = product.whatsapp;
+  const receiptUrl = new URL(product.whatsapp);
+  receiptUrl.searchParams.set("text",
+    `Hola Anumara, quiero enviar mi comprobante de Mercado Pago para la pieza ${product.title} (código ${product.id}) y coordinar el envío. Adjunto la captura o comprobante a continuación.`);
+  elements.modalReceipt.href = receiptUrl.href;
   elements.modalThumbs.innerHTML = product.images.map((image, index) => `
     <button type="button" data-image-index="${index}" aria-label="Ver foto ${index + 1}" class="${index === 0 ? "active" : ""}">
       <img src="${image}" alt="" loading="lazy">

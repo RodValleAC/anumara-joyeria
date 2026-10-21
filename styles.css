@@ -611,6 +611,13 @@ footer p:last-child { text-align: right; }
 .modal-materials span { padding: 6px 9px; color: var(--muted); border: 1px solid #cfc2ad; font-size: 13px; }
 .modal-description { margin: 0 0 28px; color: var(--muted); }
 .modal-info small { margin-top: 12px; color: var(--muted); }
+.payment-details { margin-bottom: 24px; }
+.payment-details h3 { margin: 0 0 12px; font-size: 22px; }
+.payment-steps { margin: 0 0 20px; padding-left: 22px; font-size: 16px; }
+.payment-steps li + li { margin-top: 8px; }
+.payment-details .button { display: flex; width: 100%; }
+#modal-receipt { margin-top: 12px; }
+.payment-note { margin: 12px 0 0; color: var(--muted); font-size: 16px; }
 
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s, transform .8s; }
 .reveal.visible { opacity: 1; transform: none; }
