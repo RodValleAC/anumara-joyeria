@@ -143,7 +143,7 @@ def launch_post(items):
     ornament(draw, 540, 620, 190)
     draw_tracked(draw, 540, 648, "YA PUEDES COMPRAR EN LÍNEA", font("display", 36, 600), CREAM, 5)
     subtitle = font("serif", 40, italic=True)
-    draw.text((540, 718), "181 piezas únicas en Plata Ley 925", font=subtitle, fill=GOLD, anchor="ma")
+    draw.text((540, 718), "187 piezas únicas en Plata Ley 925", font=subtitle, fill=GOLD, anchor="ma")
     draw.text((540, 772), "Gemas y piedras naturales", font=subtitle, fill=(150, 165, 148), anchor="ma")
     footer(draw, image, 912)
     image.save(OUTPUT / "01-publicacion-lanzamiento.jpg", quality=92)
@@ -253,7 +253,7 @@ WhatsApp: {PHONE_TEXT}
 ---------------------------------------
 ✨ Ya puedes conocer toda la colección de Anumara en línea ✨
 
-Joyería con alma: 181 piezas únicas creadas con Plata Ley 925, gemas y piedras naturales.
+Joyería con alma: 187 piezas únicas creadas con Plata Ley 925, gemas y piedras naturales.
 Collares, Mil Vueltas, pulseras y anillos; cada uno pensado como un talismán vivo que
 acompaña tu historia.
 
@@ -268,7 +268,7 @@ Explora la colección completa aquí 👉 {url}
 ---------------------------------------
 Cada joya es un eslabón. Cada piedra es un latido. ✨
 
-Nuestra colección completa ya está en línea: 181 piezas en Plata Ley 925 con gemas y
+Nuestra colección completa ya está en línea: 187 piezas en Plata Ley 925 con gemas y
 piedras naturales, elegidas una a una por su energía.
 
 🔗 Link en la biografía
@@ -344,7 +344,7 @@ def build():
     piece_post(items, "07-pieza-corazon-en-flor.jpg", "collares-corazon-en-flor-5")
     piece_post(items, "08-pieza-catrina.jpg", "collares-linea-dia-de-muertos-catrina-1")
     story(items, "historia-01-lanzamiento.jpg", "collares-corazon-radiante-3",
-          "Tienda en línea", "181 piezas únicas te esperan", 1)
+          "Tienda en línea", "187 piezas únicas te esperan", 1)
     story(items, "historia-02-coleccion.jpg", "collares-corazon-en-flor-5",
           "Joyería con alma", "Plata Ley 925 y piedras naturales", 1)
     story(items, "historia-03-whatsapp.jpg", "collares-volando-4",
